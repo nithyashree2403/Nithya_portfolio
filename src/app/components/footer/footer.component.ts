@@ -19,8 +19,8 @@ import { CommonModule } from '@angular/common';
               </div>
             </div>
             <div>
-              <span class="text-sm font-bold text-slate-200">Nithya</span>
-              <span class="text-xs text-slate-500 block">© 2026 • MLOps & Full-Stack Engineer</span>
+              <span class="text-sm font-bold text-slate-200">Nithya Shree V.S</span>
+              <span class="text-xs text-slate-500 block">© 2026 • AI/ML Engineer (Agentic / Applied AI)</span>
             </div>
           </div>
 

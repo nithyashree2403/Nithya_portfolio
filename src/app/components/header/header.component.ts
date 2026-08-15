@@ -19,7 +19,7 @@ import { CommonModule } from '@angular/common';
             </div>
             <div class="flex flex-col">
               <span class="text-slate-100 font-bold tracking-tight text-base group-hover:text-sky-400 transition-colors">Nithya Shree V.S</span>
-              <span class="text-[11px] font-mono text-slate-400">MLOps & Full-Stack</span>
+              <span class="text-[11px] font-mono text-slate-400">AI/ML & MLOps Engineer</span>
             </div>
           </a>
 

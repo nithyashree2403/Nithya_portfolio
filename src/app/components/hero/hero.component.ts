@@ -25,7 +25,7 @@ import { PortfolioService } from '../../services/portfolio.service';
               </span>
               <span>Dublin, Ireland</span>
               <span class="text-slate-600">•</span>
-              <span class="text-sky-400 font-semibold">Open to Full-Time Roles</span>
+              <span class="text-sky-400 font-semibold">Open to AI / MLOps / Full-Stack Roles</span>
             </div>
 
             <!-- Title & Degree Callout -->
@@ -33,29 +33,29 @@ import { PortfolioService } from '../../services/portfolio.service';
               <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-100 leading-tight">
                 Hi, I'm <span class="gradient-text">Nithya Shree V.S</span> 👋
               </h1>
-              <p class="text-2xl sm:text-3xl font-bold text-slate-300 tracking-tight">
-                MLOps & Full-Stack Engineer
+              <p class="text-xl sm:text-2xl font-bold text-slate-300 tracking-tight">
+                AI/ML Engineer — Associate Engineer (Agentic / Applied AI)
               </p>
             </div>
 
             <!-- Bio Summary from Resume -->
             <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
-              MSc in Information Systems at <span class="text-sky-300 font-semibold underline decoration-sky-500/50 underline-offset-4">University College Dublin (GPA 3.51/4.2)</span> and B.Tech in CS from <span class="text-sky-300 font-semibold">Dayananda Sagar University (CGPA 9.12)</span>. Hands-on AI & MLOps engineering experience at <span class="text-indigo-300 font-semibold">Bosch</span> and <span class="text-indigo-300 font-semibold">Continental</span>.
+              MSc in Information Systems at <span class="text-sky-300 font-semibold underline decoration-sky-500/50 underline-offset-4">University College Dublin (GPA 3.51/4.2)</span> on a CS & Engineering foundation from <span class="text-sky-300 font-semibold">Dayananda Sagar University (CGPA 9.12)</span>. Hands-on AI/ML, MLOps, and full-stack internship experience at <span class="text-indigo-300 font-semibold">Bosch</span>, <span class="text-indigo-300 font-semibold">Continental</span>, and <span class="text-indigo-300 font-semibold">Webstack Academy</span>.
             </p>
 
             <!-- Quick Specs & Tech Highlights -->
             <div class="flex flex-wrap gap-2 pt-1">
               <span class="px-3 py-1 rounded-md text-xs font-mono bg-slate-900 border border-slate-800 text-sky-300">
-                ⚙️ MLOps (MLflow / Kubeflow)
+                ⚙️ MLOps & Agentic AI (MLflow / Kubeflow)
               </span>
               <span class="px-3 py-1 rounded-md text-xs font-mono bg-slate-900 border border-slate-800 text-indigo-300">
-                ⚡ Angular 18 & Flask
+                ⚡ Angular 18, Flask & MERN Stack
               </span>
               <span class="px-3 py-1 rounded-md text-xs font-mono bg-slate-900 border border-slate-800 text-cyan-300">
-                🐍 Python & PyTorch / TensorFlow
+                🐍 Python, Java, C#, TypeScript & C
               </span>
               <span class="px-3 py-1 rounded-md text-xs font-mono bg-slate-900 border border-slate-800 text-purple-300">
-                🎓 Duke & IBM GenAI Certified
+                🎓 Coursera, Duke, IBM & Google Certified
               </span>
             </div>
 
@@ -65,7 +65,7 @@ import { PortfolioService } from '../../services/portfolio.service';
                 href="#projects" 
                 class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-semibold text-sm text-slate-950 bg-gradient-to-r from-sky-400 via-cyan-400 to-indigo-400 hover:opacity-95 transition-all shadow-lg shadow-sky-500/25 group"
               >
-                <span>View Featured Projects</span>
+                <span>View Projects & Engineering Work</span>
                 <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                 </svg>
@@ -122,22 +122,26 @@ import { PortfolioService } from '../../services/portfolio.service';
                 <div class="space-y-3">
                   <div>
                     <h4 class="text-base font-bold text-slate-100">MSc in Information Systems</h4>
-                    <p class="text-xs text-sky-300 font-mono">University College Dublin (UCD)</p>
+                    <p class="text-xs text-sky-300 font-mono">University College Dublin (UCD) (2025–Present)</p>
                   </div>
                   <div>
                     <h4 class="text-base font-bold text-slate-100">B.Tech Computer Science</h4>
-                    <p class="text-xs text-indigo-300 font-mono">Dayananda Sagar University (CGPA 9.12)</p>
+                    <p class="text-xs text-indigo-300 font-mono">Dayananda Sagar University (CGPA 9.12) (2021–2025)</p>
                   </div>
                 </div>
 
-                <div class="grid grid-cols-2 gap-3 pt-1">
-                  <div class="p-3 rounded-xl bg-slate-900/90 border border-slate-800">
-                    <span class="text-lg font-bold text-sky-400 font-mono">Bosch</span>
-                    <p class="text-[11px] text-slate-400 mt-0.5">AI & Full Stack</p>
+                <div class="grid grid-cols-3 gap-2 pt-1">
+                  <div class="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
+                    <span class="text-xs font-bold text-sky-400 font-mono">Bosch</span>
+                    <p class="text-[10px] text-slate-400 mt-0.5">AI & Full Stack</p>
                   </div>
-                  <div class="p-3 rounded-xl bg-slate-900/90 border border-slate-800">
-                    <span class="text-lg font-bold text-cyan-400 font-mono">Continental</span>
-                    <p class="text-[11px] text-slate-400 mt-0.5">Data & MLOps</p>
+                  <div class="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
+                    <span class="text-xs font-bold text-cyan-400 font-mono">Continental</span>
+                    <p class="text-[10px] text-slate-400 mt-0.5">Data & MLOps</p>
+                  </div>
+                  <div class="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
+                    <span class="text-xs font-bold text-indigo-400 font-mono">WSA</span>
+                    <p class="text-[10px] text-slate-400 mt-0.5">MERN Stack</p>
                   </div>
                 </div>
 
@@ -162,3 +166,4 @@ export class HeroComponent {
   private portfolioService = inject(PortfolioService);
   profile = this.portfolioService.profile;
 }
+

@@ -22,81 +22,51 @@ import { PortfolioService } from '../../services/portfolio.service';
             Education & <span class="gradient-text">Certifications</span>
           </h2>
           <p class="text-slate-400 text-base sm:text-lg">
-            Strong academic background spanning UCD (GPA 3.51/4.2) and Dayananda Sagar University (CGPA 9.12/10), complemented by industry certifications.
+            Academic qualifications spanning UCD (GPA 3.51/4.2) and Dayananda Sagar University (CGPA 9.12/10), Senior Secondary & Secondary CBSE education, complemented by industry certifications.
           </p>
         </div>
 
         <!-- Education Degrees Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto mb-16">
           
-          <!-- UCD Card -->
-          <div class="glass-card rounded-2xl p-6 sm:p-8 space-y-6 border border-slate-800/80 bg-slate-900/60 shadow-xl flex flex-col justify-between">
+          <div 
+            *ngFor="let edu of educationList()"
+            class="glass-card rounded-2xl p-6 sm:p-7 space-y-5 border border-slate-800/80 bg-slate-900/60 shadow-xl flex flex-col justify-between"
+          >
             <div class="space-y-4">
               <div class="flex items-center justify-between">
                 <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/30">
-                  Master of Science
+                  {{ edu.badge }}
                 </span>
-                <span class="text-xs font-mono text-slate-400">2025 – Present</span>
+                <span class="text-xs font-mono text-slate-400">{{ edu.period }}</span>
               </div>
 
               <div class="space-y-1">
-                <h3 class="text-xl font-bold text-slate-100">University College Dublin (UCD)</h3>
-                <p class="text-xs text-sky-400 font-medium">Dublin, Ireland</p>
-                <p class="text-base font-bold text-slate-200 mt-2">MSc in Information Systems</p>
+                <h3 class="text-xl font-bold text-slate-100">{{ edu.institution }}</h3>
+                <p class="text-xs text-sky-400 font-medium">{{ edu.location }}</p>
+                <p class="text-base font-bold text-slate-200 mt-1">{{ edu.degree }}</p>
               </div>
 
               <div class="p-3 rounded-xl bg-slate-950/80 border border-slate-800 flex items-center justify-between">
-                <span class="text-xs text-slate-400 font-mono">Academic GPA</span>
-                <span class="text-base font-bold text-sky-400 font-mono">3.51 / 4.2</span>
+                <span class="text-xs text-slate-400 font-mono">{{ edu.gradeLabel }}</span>
+                <span class="text-base font-bold text-sky-400 font-mono">{{ edu.grade }}</span>
               </div>
 
               <p class="text-xs text-slate-300 leading-relaxed">
-                Specialized in Machine Learning Systems, Data Architecture, Software Engineering Systems, Cloud Computing & DevOps, and Enterprise Information Systems.
+                {{ edu.details }}
               </p>
             </div>
 
             <div class="pt-4 border-t border-slate-800 text-[11px] font-mono text-slate-400 flex items-center justify-between">
-              <span>Status: Enrolled</span>
-              <span class="text-emerald-400">Dublin, Ireland</span>
-            </div>
-          </div>
-
-          <!-- DSU Card -->
-          <div class="glass-card rounded-2xl p-6 sm:p-8 space-y-6 border border-slate-800/80 bg-slate-900/60 shadow-xl flex flex-col justify-between">
-            <div class="space-y-4">
-              <div class="flex items-center justify-between">
-                <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/30">
-                  Bachelor of Technology
-                </span>
-                <span class="text-xs font-mono text-slate-400">2021 – 2025</span>
-              </div>
-
-              <div class="space-y-1">
-                <h3 class="text-xl font-bold text-slate-100">Dayananda Sagar University</h3>
-                <p class="text-xs text-indigo-400 font-medium">Bengaluru, India</p>
-                <p class="text-base font-bold text-slate-200 mt-2">B.Tech in Computer Science & Engineering</p>
-              </div>
-
-              <div class="p-3 rounded-xl bg-slate-950/80 border border-slate-800 flex items-center justify-between">
-                <span class="text-xs text-slate-400 font-mono">Academic CGPA</span>
-                <span class="text-base font-bold text-indigo-400 font-mono">9.12 / 10.0</span>
-              </div>
-
-              <p class="text-xs text-slate-300 leading-relaxed">
-                Core coursework in Data Structures & Algorithms (DSA), DBMS, Artificial Intelligence, Deep Learning, Operating Systems, Computer Networks, and Cybersecurity.
-              </p>
-            </div>
-
-            <div class="pt-4 border-t border-slate-800 text-[11px] font-mono text-slate-400 flex items-center justify-between">
-              <span>Grade: Distinction (9.12 CGPA)</span>
-              <span class="text-emerald-400">Graduated</span>
+              <span>Status: {{ edu.status }}</span>
+              <span class="text-emerald-400">📍 {{ edu.location }}</span>
             </div>
           </div>
 
         </div>
 
         <!-- Certifications Showcase Grid -->
-        <div id="certifications" class="max-w-5xl mx-auto space-y-6">
+        <div id="certifications" class="max-w-6xl mx-auto space-y-6">
           <div class="text-center">
             <h3 class="text-2xl font-bold text-slate-100">Professional Certifications</h3>
             <p class="text-xs text-slate-400 font-mono mt-1">Verified industry programs & credentials</p>
@@ -126,22 +96,22 @@ import { PortfolioService } from '../../services/portfolio.service';
         </div>
 
         <!-- Achievements & Positions of Responsibility -->
-        <div class="max-w-5xl mx-auto mt-16 p-6 sm:p-8 glass-card rounded-2xl border border-slate-800 bg-slate-900/40">
+        <div class="max-w-6xl mx-auto mt-16 p-6 sm:p-8 glass-card rounded-2xl border border-slate-800 bg-slate-900/40">
           <h3 class="text-lg font-bold text-slate-100 mb-4 flex items-center space-x-2">
             <span>🎭 Cultural Achievements & Leadership</span>
           </h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800/80 space-y-2">
-              <span class="text-xs font-mono text-sky-400">August 2024 • Dubai, UAE</span>
-              <h4 class="text-sm font-bold text-slate-200">Bharatanatyam Performance – Bharat Utsav</h4>
+              <span class="text-xs font-mono text-sky-400">15 August 2024 • Dubai, UAE</span>
+              <h4 class="text-sm font-bold text-slate-200">Bharatanatyam Performance – Bharat Utsav, Dubai, UAE</h4>
               <p class="text-xs text-slate-300 leading-relaxed">
-                Performed classical Bharatanatyam dance at Bharat Utsav, a prominent Independence Day cultural festival in Dubai, showcasing Indian classical heritage to international diplomats and delegates.
+                Performed classical dance at Bharat Utsav, Dubai's Independence Day festival, before an international audience.
               </p>
             </div>
 
             <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800/80 space-y-2">
-              <span class="text-xs font-mono text-indigo-400">May 2024 • Bengaluru</span>
-              <h4 class="text-sm font-bold text-slate-200">Volunteer – DSU Project Expo 2K24</h4>
+              <span class="text-xs font-mono text-indigo-400">May 2024 • Bengaluru, India</span>
+              <h4 class="text-sm font-bold text-slate-200">Volunteer & Coordinator – DSU Engineering Expo</h4>
               <p class="text-xs text-slate-300 leading-relaxed">
                 Coordinated project demonstrations, technical evaluations, and event operations for Dayananda Sagar University's annual engineering project exhibition.
               </p>
@@ -155,5 +125,7 @@ import { PortfolioService } from '../../services/portfolio.service';
 })
 export class EducationComponent {
   private portfolioService = inject(PortfolioService);
+  educationList = this.portfolioService.getEducation();
   certifications = this.portfolioService.getCertifications();
 }
+
