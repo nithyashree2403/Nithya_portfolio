@@ -63,7 +63,7 @@ export class PortfolioService {
       subtitle: 'LSTM-CNN & XGBoost Engine with Angular, Flask APIs & SQLite',
       category: 'fullstack',
       categoryLabel: 'Full-Stack & AI',
-      date: 'Jan 2025 – May 2025',
+      date: 'Feb 2025 – May 2025',
       description: 'Designed the system architecture for an AI/ML forecasting platform (LSTM-CNN/XGBoost) predicting supply-demand trends, collaborating with product managers and business stakeholders at Bosch.',
       longDescription: 'Designed the system architecture for an AI/ML forecasting platform (LSTM-CNN/XGBoost) predicting supply-demand trends, collaborating with product managers and business stakeholders. Built a full-stack production-support app (Angular, Flask APIs, SQLite) with RESTful APIs, Git version control, and CI/CD-driven deployment across environments. Enabled real-time forecasting and risk categorisation; instrumented accuracy, latency, and cost metrics for reliable, production-ready workflows.',
       architectureHighlights: [
@@ -90,7 +90,7 @@ export class PortfolioService {
       subtitle: 'MLflow Tracking, Kubeflow Pipelines, Docker & Governance Documentation',
       category: 'mlops',
       categoryLabel: 'MLOps Infrastructure',
-      date: 'Jul 2024 – Oct 2024',
+      date: 'Jul 2024 – Sep 2024',
       description: 'Implemented experiment tracking, model/prompt versioning, deployment monitoring, and safety monitoring using MLflow; containerized workflows (Docker/Kubernetes) via Kubeflow Pipelines at Continental.',
       longDescription: 'Implemented experiment tracking, model/prompt versioning, deployment monitoring, and safety monitoring using MLflow; containerized workflows (Docker/Kubernetes) via Kubeflow Pipelines for release management. Collaborated with cross-functional teams, product managers, and business stakeholders; authored audit-ready deployment playbooks and governance documentation for automated ML workflow solutions. Contributed across the ML lifecycle — preprocessing, model training, evaluation-framework building, and regression testing — supporting production deployment for corporate teams.',
       architectureHighlights: [
@@ -200,7 +200,7 @@ export class PortfolioService {
       company: 'Bosch Global Software Technologies',
       role: 'Intern – AI & Full Stack',
       location: 'Bengaluru, India',
-      period: 'Jan 2025 – May 2025',
+      period: 'Feb 2025 – May 2025',
       badge: 'AI & Full Stack',
       description: [
         'Designed the system architecture for an AI/ML forecasting platform (LSTM-CNN/XGBoost) predicting supply-demand trends, collaborating with product managers and business stakeholders.',
@@ -213,7 +213,7 @@ export class PortfolioService {
       company: 'Continental Automotive Components (India) Pvt. Ltd',
       role: 'Data & MLOps Engineering Intern',
       location: 'Bengaluru, India',
-      period: 'Jul 2024 – Oct 2024',
+      period: 'Jul 2024 – Sep 2024',
       badge: 'Data & MLOps',
       description: [
         'Implemented experiment tracking, model/prompt versioning, deployment monitoring, and safety monitoring using MLflow; containerized workflows (Docker/Kubernetes) via Kubeflow Pipelines for release management.',
