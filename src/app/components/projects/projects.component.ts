@@ -54,9 +54,14 @@ import { Project } from '../../models/project.model';
               
               <!-- Top Row: Badge & Category -->
               <div class="flex items-center justify-between">
-                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/30 font-mono">
-                  {{ project.badge || project.categoryLabel }}
-                </span>
+                <div class="flex items-center space-x-2">
+                  <span class="px-3 py-1 rounded-full text-xs font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/30 font-mono">
+                    {{ project.badge || project.categoryLabel }}
+                  </span>
+                  <span *ngIf="project.date" class="px-2.5 py-1 rounded-full text-xs font-mono bg-slate-950/80 text-slate-400 border border-slate-800">
+                    📅 {{ project.date }}
+                  </span>
+                </div>
 
                 <div class="flex items-center space-x-2">
                   <a 

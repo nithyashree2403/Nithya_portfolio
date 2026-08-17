@@ -23,9 +23,14 @@ import { PortfolioService } from '../../services/portfolio.service';
         <!-- Modal Header -->
         <div class="p-6 border-b border-slate-800 flex items-start justify-between bg-slate-950/60">
           <div>
-            <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/30">
-              {{ project()?.badge || project()?.categoryLabel }}
-            </span>
+            <div class="flex items-center space-x-2">
+              <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/30">
+                {{ project()?.badge || project()?.categoryLabel }}
+              </span>
+              <span *ngIf="project()?.date" class="px-2.5 py-1 rounded-full text-xs font-mono bg-slate-950/80 text-slate-400 border border-slate-800">
+                📅 {{ project()?.date }}
+              </span>
+            </div>
             <h3 class="text-2xl font-bold text-slate-100 mt-2">
               {{ project()?.title }}
             </h3>

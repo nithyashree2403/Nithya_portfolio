@@ -133,15 +133,15 @@ import { PortfolioService } from '../../services/portfolio.service';
                 <div class="grid grid-cols-3 gap-2 pt-1">
                   <div class="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
                     <span class="text-xs font-bold text-sky-400 font-mono">Bosch</span>
-                    <p class="text-[10px] text-slate-400 mt-0.5">AI & Full Stack</p>
+                    <p class="text-[10px] text-slate-400 mt-0.5">Feb 2025 – May 2025</p>
                   </div>
                   <div class="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
                     <span class="text-xs font-bold text-cyan-400 font-mono">Continental</span>
-                    <p class="text-[10px] text-slate-400 mt-0.5">Data & MLOps</p>
+                    <p class="text-[10px] text-slate-400 mt-0.5">Jul 2024 – Sep 2024</p>
                   </div>
                   <div class="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
                     <span class="text-xs font-bold text-indigo-400 font-mono">WSA</span>
-                    <p class="text-[10px] text-slate-400 mt-0.5">MERN Stack</p>
+                    <p class="text-[10px] text-slate-400 mt-0.5">Jan 2024 – Apr 2024</p>
                   </div>
                 </div>
 
