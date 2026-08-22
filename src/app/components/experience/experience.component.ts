@@ -16,10 +16,10 @@ import { PortfolioService } from '../../services/portfolio.service';
         <!-- Section Header -->
         <div class="text-center space-y-4 max-w-3xl mx-auto mb-16">
           <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-mono">
-            <span>💼 Industry Experience</span>
+            <span>💼 Professional Experience</span>
           </div>
           <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-100 tracking-tight">
-            Work Experience & <span class="gradient-text">Internships</span>
+            Work Experience & <span class="gradient-text">Engineering Roles</span>
           </h2>
           <p class="text-slate-400 text-base sm:text-lg">
             Hands-on software engineering & MLOps experience in tier-1 global technology enterprises.

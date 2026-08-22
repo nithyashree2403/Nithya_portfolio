@@ -20,13 +20,13 @@ export interface Education {
 export class PortfolioService {
   profile = {
     name: 'Nithya Shree V.S',
-    title: 'AI/ML Engineer — Associate Engineer (Agentic / Applied AI)',
-    email: 'nithyashree242003@gmail.com',
+    title: 'Software Engineer — AI / Applied Machine Learning',
+    email: 'nithyashree2403@gmail.com',
     phone: '+353 852193644',
     location: 'Dublin, Ireland',
     ucdGpa: '3.51 / 4.2',
     dsuCgpa: '9.12 / 10',
-    summary: 'AI/ML Engineer (Associate Engineer) pursuing an MSc in Information Systems at UCD (GPA 3.51/4.2), on a CS & Engineering foundation from Dayananda Sagar University (CGPA 9.12). Hands-on across the AI/ML lifecycle — architecture, data structures, model training, evaluation, version control, CI/CD, containerization (Docker, Kubernetes), and cloud deployment (Azure, GCP) — through AI/ML, MLOps, and full-stack internships, collaborating with product managers and business stakeholders across corporate functions. Strong fundamentals in Python, Java, C#, and TypeScript, with coursework in agentic AI, generative AI/LLMs, and cybersecurity. Passionate about building secure, reliable AI workflow solutions using cutting-edge technologies for financial-services environments.'
+    summary: 'Software Engineer with a strong computer science foundation (BTech, CGPA 9.12) and an MSc in Information Systems in progress at UCD (GPA 3.51/4.2). Experience spans the full software and ML lifecycle — systems design, programming languages, testing, code reviews, model training, evaluation, and deployment — across Bosch, Continental, and Webstack Academy, working alongside talented people to support stakeholders, customers, and business operations. Proficient in Python, Java, C, JavaScript, Angular, and Flask; quick to pick up languages such as Scala, Ruby, or Go given strong fundamentals. Skilled in REST/HTTP API design, independent research, and writing clearly for stakeholders.'
   };
 
   private projectsSignal = signal<Project[]>([
@@ -37,19 +37,19 @@ export class PortfolioService {
       category: 'ai',
       categoryLabel: 'AI & Data Science',
       date: '2025',
-      description: 'Spearheaded a team building AI analytics dashboards and knowledge-graph tools processing 600+ scientific datasets, for reasoning over complex relationships.',
-      longDescription: 'Spearheaded a team building AI analytics dashboards and knowledge-graph tools processing 600+ scientific datasets, for reasoning over complex relationships. Implemented semantic search and knowledge retrieval by embedding text into vector space for intelligent, context-aware data discovery.',
+      description: 'Spearheaded a team designing AI analytics dashboards processing 600+ scientific datasets; implemented semantic search via text embeddings and token-sequence processing.',
+      longDescription: 'Spearheaded a team designing AI analytics dashboards processing 600+ scientific datasets; implemented semantic search via text embeddings and token-sequence processing for intelligent data discovery. Developed knowledge-graph exploration tools for navigating complex scientific relationships, supported by independent research into graph algorithms.',
       architectureHighlights: [
-        'Spearheaded a team building AI analytics dashboards and knowledge-graph tools for 600+ scientific datasets.',
-        'Implemented semantic search and knowledge retrieval by embedding text into vector space.',
-        'Enabled reasoning over complex relationships across multi-dimensional astronomical dataset connections.'
+        'Spearheaded a team designing AI analytics dashboards processing 600+ scientific datasets.',
+        'Implemented semantic search via text embeddings and token-sequence processing for intelligent data discovery.',
+        'Developed knowledge-graph exploration tools for navigating complex scientific relationships.'
       ],
       metrics: [
         { value: '600+', label: 'Scientific Datasets' },
         { value: 'Vector Space', label: 'Semantic Search' },
         { value: 'Knowledge Graph', label: 'Data Discovery' }
       ],
-      tags: ['Python', 'AI Analytics', 'Semantic Search', 'Vector Search', 'Knowledge Graphs', 'REST APIs'],
+      tags: ['Python', 'AI Analytics', 'Semantic Search', 'Vector Embeddings', 'Knowledge Graphs', 'Graph Algorithms'],
       featured: true,
       githubUrl: 'https://github.com/nithyashree2403/nasa-space-apps-analytics',
       liveUrl: 'https://github.com/nithyashree2403/nasa-space-apps-analytics',
@@ -63,20 +63,20 @@ export class PortfolioService {
       subtitle: 'LSTM-CNN & XGBoost Engine with Angular, Flask APIs & SQLite',
       category: 'fullstack',
       categoryLabel: 'Full-Stack & AI',
-      date: 'Feb 2025 – May 2025',
-      description: 'Designed the system architecture for an AI/ML forecasting platform (LSTM-CNN/XGBoost) predicting supply-demand trends, collaborating with product managers and business stakeholders at Bosch.',
-      longDescription: 'Designed the system architecture for an AI/ML forecasting platform (LSTM-CNN/XGBoost) predicting supply-demand trends, collaborating with product managers and business stakeholders. Built a full-stack production-support app (Angular, Flask APIs, SQLite) with RESTful APIs, Git version control, and CI/CD-driven deployment across environments. Enabled real-time forecasting and risk categorisation; instrumented accuracy, latency, and cost metrics for reliable, production-ready workflows.',
+      date: 'Jan 2025 – May 2025',
+      description: 'Led systems design and architecture for an AI platform forecasting supply-demand trends (LSTM-CNN/XGBoost), supporting internal stakeholders, customer service, and revenue-driving operations at Bosch.',
+      longDescription: 'Led systems design and architecture for an AI platform forecasting supply-demand trends (LSTM-CNN/XGBoost), supporting internal stakeholders, customer service, and revenue-driving operations. Built and tested production software (Angular/HTML/CSS frontend, Flask middle tier, SQLite backend), developing RESTful, HTTP-based API routing across environments. Enabled low-latency, real-time forecasting and risk categorisation; tracked accuracy metrics and incorporated feedback from stakeholders and team members through iterative testing.',
       architectureHighlights: [
-        'Designed system architecture for AI/ML forecasting platform (LSTM-CNN/XGBoost) predicting supply-demand trends.',
-        'Built full-stack production-support app (Angular, Flask APIs, SQLite) with RESTful APIs and CI/CD-driven deployment.',
-        'Enabled real-time forecasting and risk categorisation; instrumented accuracy, latency, and cost metrics.'
+        'Led systems design and architecture for AI platform forecasting supply-demand trends (LSTM-CNN/XGBoost).',
+        'Built and tested production software (Angular/HTML/CSS frontend, Flask middle tier, SQLite backend) with RESTful API routing.',
+        'Enabled low-latency, real-time forecasting and risk categorisation; tracked accuracy metrics through iterative testing.'
       ],
       metrics: [
         { value: 'LSTM-CNN/XGBoost', label: 'Forecasting Architecture' },
-        { value: 'Angular + Flask', label: 'Production-Support App' },
-        { value: 'Bosch Global', label: 'AI & Full Stack Intern' }
+        { value: 'Angular + Flask', label: 'Production Software' },
+        { value: 'Bosch Global', label: 'Software Engineer' }
       ],
-      tags: ['Python', 'LSTM-CNN', 'XGBoost', 'Angular', 'Flask APIs', 'SQLite', 'CI/CD', 'Git'],
+      tags: ['Python', 'LSTM-CNN', 'XGBoost', 'Angular', 'Flask APIs', 'SQLite', 'RESTful APIs', 'Iterative Testing'],
       featured: true,
       githubUrl: 'https://github.com/nithyashree2403/ai-demand-forecasting',
       liveUrl: 'https://github.com/nithyashree2403/ai-demand-forecasting',
@@ -87,24 +87,24 @@ export class PortfolioService {
     {
       id: 'continental-mlops-pipelines',
       title: 'Data & MLOps Pipeline & Governance Suite',
-      subtitle: 'MLflow Tracking, Kubeflow Pipelines, Docker & Governance Documentation',
+      subtitle: 'MLflow Tracking, Kubeflow Pipelines, Model Versioning & Safety Monitoring',
       category: 'mlops',
       categoryLabel: 'MLOps Infrastructure',
-      date: 'Jul 2024 – Sep 2024',
-      description: 'Implemented experiment tracking, model/prompt versioning, deployment monitoring, and safety monitoring using MLflow; containerized workflows (Docker/Kubernetes) via Kubeflow Pipelines at Continental.',
-      longDescription: 'Implemented experiment tracking, model/prompt versioning, deployment monitoring, and safety monitoring using MLflow; containerized workflows (Docker/Kubernetes) via Kubeflow Pipelines for release management. Collaborated with cross-functional teams, product managers, and business stakeholders; authored audit-ready deployment playbooks and governance documentation for automated ML workflow solutions. Contributed across the ML lifecycle — preprocessing, model training, evaluation-framework building, and regression testing — supporting production deployment for corporate teams.',
+      date: 'Jul 2024 – Oct 2024',
+      description: 'Implemented experiment tracking, model versioning, deployment monitoring, and safety monitoring using MLflow; documented deployment programs using Kubeflow Pipelines at Continental.',
+      longDescription: 'Implemented experiment tracking, model versioning, deployment monitoring, and safety monitoring using MLflow, improving test coverage to reduce defects and support steady growth. Collaborated with cross-functional engineering teams and people across the organisation on technical design and code reviews; documented deployment programs using Kubeflow Pipelines. Contributed across the ML lifecycle — preprocessing, training, evaluation, and deployment — supporting client teams and customers, with feedback and guidance from mentors and peers.',
       architectureHighlights: [
-        'Implemented experiment tracking, model/prompt versioning, deployment & safety monitoring using MLflow.',
-        'Containerized workflows (Docker/Kubernetes) via Kubeflow Pipelines for release management.',
-        'Authored audit-ready deployment playbooks and governance documentation for automated ML workflow solutions.',
-        'Contributed across ML lifecycle: preprocessing, training, evaluation-framework building, and regression testing.'
+        'Implemented experiment tracking, model versioning, deployment & safety monitoring using MLflow.',
+        'Collaborated with cross-functional engineering teams on technical design and code reviews.',
+        'Documented deployment programs using Kubeflow Pipelines.',
+        'Contributed across ML lifecycle: preprocessing, training, evaluation, and deployment.'
       ],
       metrics: [
-        { value: 'MLflow & Kubeflow', label: 'Release Management' },
-        { value: 'Audit-Ready', label: 'Governance Playbooks' },
-        { value: 'Continental', label: 'Data & MLOps Intern' }
+        { value: 'MLflow & Kubeflow', label: 'Model Versioning & Pipelines' },
+        { value: 'ML Lifecycle', label: 'Prep, Train, Eval, Deploy' },
+        { value: 'Continental', label: 'Software Engineer' }
       ],
-      tags: ['MLflow', 'Kubeflow Pipelines', 'Docker', 'Kubernetes', 'Python', 'Model Versioning', 'Governance & Audit'],
+      tags: ['MLflow', 'Kubeflow Pipelines', 'Python', 'Model Versioning', 'Safety Monitoring', 'Code Reviews'],
       featured: true,
       githubUrl: 'https://github.com/nithyashree2403/mlops-kubeflow-mlflow',
       liveUrl: 'https://github.com/nithyashree2403/mlops-kubeflow-mlflow',
@@ -115,23 +115,23 @@ export class PortfolioService {
     {
       id: 'homely-hub-mern',
       title: 'Homely Hub – Property Renting Platform',
-      subtitle: 'Full-Stack MERN Architecture with REST API Routing & DB Abstraction',
+      subtitle: 'Full-Stack MERN Architecture with REST/HTTP API Routing & Database Access',
       category: 'fullstack',
       categoryLabel: 'Full-Stack Web',
       date: 'Jan 2024 – Apr 2024',
-      description: 'Engineered prototypes and developed "Homely Hub," a property-renting product, under mentor guidance using the MERN stack with REST API routing and database abstraction.',
-      longDescription: 'Engineered prototypes and developed "Homely Hub," a property-renting product, under mentor guidance using the MERN stack. Authored clean, maintainable, testable code across front-end UI design patterns, REST API routing, and a database abstraction layer, using version control.',
+      description: 'Engineered prototypes and developed "Homely Hub," a property-renting platform, under guidance from mentors using the MERN stack.',
+      longDescription: 'Engineered prototypes and developed "Homely Hub," a property-renting platform, under guidance from mentors using the MERN stack. Delivered clean, maintainable, well-tested code across UI design, REST/HTTP API routing, and database access, with regular code reviews and support from mentors.',
       architectureHighlights: [
-        'Engineered prototypes and developed "Homely Hub" property-renting product using the MERN stack.',
-        'Authored clean, maintainable, testable code across front-end UI design patterns and REST API routing.',
-        'Designed database abstraction layer for seamless data access and schema management.'
+        'Engineered prototypes and developed "Homely Hub" property-renting platform using the MERN stack.',
+        'Delivered clean, maintainable, well-tested code across UI design and REST/HTTP API routing.',
+        'Built database access layer with regular code reviews and mentor support.'
       ],
       metrics: [
         { value: 'MERN Stack', label: 'MongoDB Express React Node' },
-        { value: 'REST API', label: 'Routing & DB Abstraction' },
-        { value: 'WSA Intern', label: 'Property-Renting Product' }
+        { value: 'REST/HTTP API', label: 'Routing & DB Access' },
+        { value: 'Webstack Academy', label: 'Software Engineer' }
       ],
-      tags: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'MERN', 'REST API', 'Git'],
+      tags: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'MERN', 'REST/HTTP APIs', 'UI Design'],
       featured: true,
       githubUrl: 'https://github.com/nithyashree2403/homely-hub-mern',
       liveUrl: 'https://github.com/nithyashree2403/homely-hub-mern',
@@ -146,17 +146,17 @@ export class PortfolioService {
       category: 'ai',
       categoryLabel: 'Deep Learning & Vision',
       date: 'March 2024',
-      description: 'Directed data augmentation and comparative evaluation of VGG16, VGG19, ResNet, and InceptionV3 models, contributing 60% to the overall project with VGG16 superior performance.',
-      longDescription: 'Directed data augmentation and comparative evaluation of VGG16, VGG19, ResNet, and InceptionV3 models, contributing 60% to the overall project. Highlighted VGG16\'s superior performance, a key 10% contribution to project success.',
+      description: 'Directed data augmentation and model evaluation (60% of project) using VGG16, VGG19, ResNet, and InceptionV3 pre-trained models; VGG16 demonstrated superior performance.',
+      longDescription: 'Directed data augmentation and model evaluation (60% of project) using VGG16, VGG19, ResNet, and InceptionV3 pre-trained models; VGG16 demonstrated superior performance, a key 10% contribution to project success.',
       architectureHighlights: [
-        'Directed data augmentation and comparative evaluation of deep learning architectures.',
-        'Evaluated VGG16, VGG19, ResNet, and InceptionV3 computer vision models.',
-        'Highlighted VGG16\'s superior performance, contributing 60% to overall project execution.'
+        'Directed data augmentation and model evaluation (60% of project).',
+        'Evaluated VGG16, VGG19, ResNet, and InceptionV3 pre-trained models.',
+        'Demonstrated VGG16 superior performance, contributing 10% to overall project success.'
       ],
       metrics: [
         { value: '60%', label: 'Project Leadership' },
         { value: 'VGG16', label: 'Top Model Accuracy' },
-        { value: '4 Vision', label: 'Architectures Evaluated' }
+        { value: '4 Vision', label: 'Pre-trained Models' }
       ],
       tags: ['Python', 'VGG16', 'VGG19', 'ResNet', 'InceptionV3', 'OpenCV', 'PyTorch', 'TensorFlow'],
       featured: false,
@@ -169,23 +169,23 @@ export class PortfolioService {
     {
       id: 'smart-voting-auth',
       title: 'Multilayer Authentication for Smart Voting System',
-      subtitle: 'Biometric Face Recognition, Spoofing Detection & OTP Access Control',
+      subtitle: 'Biometric Face Recognition, Live Spoofing Detection & OTP Access Control',
       category: 'fullstack',
       categoryLabel: 'Full-Stack Security',
       date: 'Sep – Dec 2023',
-      description: 'Implemented multi-level access control (face recognition, spoofing detection, OTP verification) with audit logging for a secure, fraud resistant voting workflow.',
-      longDescription: 'Implemented multi-level access control (face recognition, spoofing detection, OTP verification) with audit logging for a secure, fraud resistant voting workflow. Optimised MySQL performance and revitalised the voting UI, database integration, and admin/vote-counting workflows.',
+      description: 'Implemented multi-level authentication combining face recognition, live spoofing detection, and OTP verification; optimised MySQL performance for secure credential matching and data storage.',
+      longDescription: 'Implemented multi-level authentication combining face recognition, live spoofing detection, and OTP verification; optimised MySQL performance for secure credential matching and data storage.',
       architectureHighlights: [
-        'Implemented multi-level access control (face recognition, spoofing detection, OTP verification).',
-        'Built comprehensive audit logging for secure, fraud-resistant voting workflow.',
-        'Optimised MySQL performance and revitalised voting UI, DB integration, and admin/vote-counting workflows.'
+        'Implemented multi-level authentication combining face recognition, live spoofing detection, and OTP verification.',
+        'Optimised MySQL performance for secure credential matching and data storage.',
+        'Designed anti-spoofing mechanism for fraud-resistant authentication.'
       ],
       metrics: [
-        { value: 'Multi-Level', label: 'Access Control' },
-        { value: 'Face + OTP', label: 'Spoofing Detection' },
-        { value: 'MySQL', label: 'Query Optimization' }
+        { value: 'Multi-Level', label: 'Authentication' },
+        { value: 'Face + OTP', label: 'Live Spoofing Detection' },
+        { value: 'MySQL', label: 'Performance Optimization' }
       ],
-      tags: ['Python', 'OpenCV', 'MySQL', 'Flask', 'Face Recognition', 'OTP Verification', 'Audit Logging'],
+      tags: ['Python', 'OpenCV', 'MySQL', 'Flask', 'Face Recognition', 'Spoofing Detection', 'OTP Verification'],
       featured: false,
       githubUrl: 'https://github.com/nithyashree2403/smart-voting-multilayer-auth',
       liveUrl: 'https://github.com/nithyashree2403/smart-voting-multilayer-auth',
@@ -198,41 +198,41 @@ export class PortfolioService {
   private experiencesSignal = signal<WorkExperience[]>([
     {
       company: 'Bosch Global Software Technologies',
-      role: 'Intern – AI & Full Stack',
+      role: 'Software Engineer — AI & Full Stack',
       location: 'Bengaluru, India',
-      period: 'Feb 2025 – May 2025',
+      period: 'Jan 2025 – May 2025',
       badge: 'AI & Full Stack',
       description: [
-        'Designed the system architecture for an AI/ML forecasting platform (LSTM-CNN/XGBoost) predicting supply-demand trends, collaborating with product managers and business stakeholders.',
-        'Built a full-stack production-support app (Angular, Flask APIs, SQLite) with RESTful APIs, Git version control, and CI/CD-driven deployment across environments.',
-        'Enabled real-time forecasting and risk categorisation; instrumented accuracy, latency, and cost metrics for reliable, production-ready workflows.'
+        'Led systems design and architecture for an AI platform forecasting supply-demand trends (LSTM-CNN/XGBoost), supporting internal stakeholders, customer service, and revenue-driving operations.',
+        'Built and tested production software (Angular/HTML/CSS frontend, Flask middle tier, SQLite backend), developing RESTful, HTTP-based API routing across environments.',
+        'Enabled low-latency, real-time forecasting and risk categorisation; tracked accuracy metrics and incorporated feedback from stakeholders and team members through iterative testing.'
       ],
       technologies: ['Angular', 'Flask APIs', 'Python', 'LSTM-CNN', 'XGBoost', 'SQLite', 'RESTful APIs', 'Git', 'CI/CD']
     },
     {
       company: 'Continental Automotive Components (India) Pvt. Ltd',
-      role: 'Data & MLOps Engineering Intern',
+      role: 'Software Engineer — Data & MLOps',
       location: 'Bengaluru, India',
-      period: 'Jul 2024 – Sep 2024',
+      period: 'Jul 2024 – Oct 2024',
       badge: 'Data & MLOps',
       description: [
-        'Implemented experiment tracking, model/prompt versioning, deployment monitoring, and safety monitoring using MLflow; containerized workflows (Docker/Kubernetes) via Kubeflow Pipelines for release management.',
-        'Collaborated with cross-functional teams, product managers, and business stakeholders; authored audit-ready deployment playbooks and governance documentation for automated ML workflow solutions.',
-        'Contributed across the ML lifecycle — preprocessing, model training, evaluation-framework building, and regression testing — supporting production deployment for corporate teams.'
+        'Implemented experiment tracking, model versioning, deployment monitoring, and safety monitoring using MLflow, improving test coverage to reduce defects and support steady growth.',
+        'Collaborated with cross-functional engineering teams and people across the organisation on technical design and code reviews; documented deployment programs using Kubeflow Pipelines.',
+        'Contributed across the ML lifecycle — preprocessing, training, evaluation, and deployment — supporting client teams and customers, with feedback and guidance from mentors and peers.'
       ],
-      technologies: ['MLflow', 'Kubeflow Pipelines', 'Docker', 'Kubernetes', 'Python', 'Model/Prompt Versioning', 'Governance & Audit']
+      technologies: ['MLflow', 'Kubeflow Pipelines', 'Docker', 'Kubernetes', 'Python', 'Model Versioning', 'Safety Monitoring']
     },
     {
       company: 'Webstack Academy (WSA)',
-      role: 'Full Stack Web Development Intern (MERN)',
+      role: 'Full Stack Software Engineer (MERN)',
       location: 'Online',
       period: 'Jan 2024 – Apr 2024',
       badge: 'Full Stack MERN',
       description: [
-        'Engineered prototypes and developed "Homely Hub," a property-renting product, under mentor guidance using the MERN stack.',
-        'Authored clean, maintainable, testable code across front-end UI design patterns, REST API routing, and a database abstraction layer, using version control.'
+        'Engineered prototypes and developed "Homely Hub," a property-renting platform, under guidance from mentors using the MERN stack.',
+        'Delivered clean, maintainable, well-tested code across UI design, REST/HTTP API routing, and database access, with regular code reviews and support from mentors.'
       ],
-      technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js (MERN)', 'REST API Routing', 'Database Abstraction', 'Version Control']
+      technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js (MERN)', 'REST/HTTP APIs', 'Database Access', 'Code Reviews']
     }
   ]);
 

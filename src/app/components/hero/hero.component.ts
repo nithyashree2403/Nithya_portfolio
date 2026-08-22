@@ -34,25 +34,25 @@ import { PortfolioService } from '../../services/portfolio.service';
                 Hi, I'm <span class="gradient-text">Nithya Shree V.S</span> 👋
               </h1>
               <p class="text-xl sm:text-2xl font-bold text-slate-300 tracking-tight">
-                AI/ML Engineer — Associate Engineer (Agentic / Applied AI)
+                Software Engineer — AI / Applied Machine Learning
               </p>
             </div>
 
             <!-- Bio Summary from Resume -->
             <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
-              MSc in Information Systems at <span class="text-sky-300 font-semibold underline decoration-sky-500/50 underline-offset-4">University College Dublin (GPA 3.51/4.2)</span> on a CS & Engineering foundation from <span class="text-sky-300 font-semibold">Dayananda Sagar University (CGPA 9.12)</span>. Hands-on AI/ML, MLOps, and full-stack internship experience at <span class="text-indigo-300 font-semibold">Bosch</span>, <span class="text-indigo-300 font-semibold">Continental</span>, and <span class="text-indigo-300 font-semibold">Webstack Academy</span>.
+              MSc in Information Systems at <span class="text-sky-300 font-semibold underline decoration-sky-500/50 underline-offset-4">University College Dublin (GPA 3.51/4.2)</span> on a CS & Engineering foundation from <span class="text-sky-300 font-semibold">Dayananda Sagar University (CGPA 9.12)</span>. Hands-on software engineering and MLOps experience across <span class="text-indigo-300 font-semibold">Bosch</span>, <span class="text-indigo-300 font-semibold">Continental</span>, and <span class="text-indigo-300 font-semibold">Webstack Academy</span>.
             </p>
 
             <!-- Quick Specs & Tech Highlights -->
             <div class="flex flex-wrap gap-2 pt-1">
               <span class="px-3 py-1 rounded-md text-xs font-mono bg-slate-900 border border-slate-800 text-sky-300">
-                ⚙️ MLOps & Agentic AI (MLflow / Kubeflow)
+                ⚙️ MLOps & AI Systems (MLflow / Kubeflow)
               </span>
               <span class="px-3 py-1 rounded-md text-xs font-mono bg-slate-900 border border-slate-800 text-indigo-300">
-                ⚡ Angular 18, Flask & MERN Stack
+                ⚡ Angular, Flask & MERN Stack
               </span>
               <span class="px-3 py-1 rounded-md text-xs font-mono bg-slate-900 border border-slate-800 text-cyan-300">
-                🐍 Python, Java, C#, TypeScript & C
+                🐍 Python, Java, C, JavaScript & SQL
               </span>
               <span class="px-3 py-1 rounded-md text-xs font-mono bg-slate-900 border border-slate-800 text-purple-300">
                 🎓 Coursera, Duke, IBM & Google Certified
@@ -133,11 +133,11 @@ import { PortfolioService } from '../../services/portfolio.service';
                 <div class="grid grid-cols-3 gap-2 pt-1">
                   <div class="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
                     <span class="text-xs font-bold text-sky-400 font-mono">Bosch</span>
-                    <p class="text-[10px] text-slate-400 mt-0.5">Feb 2025 – May 2025</p>
+                    <p class="text-[10px] text-slate-400 mt-0.5">Jan 2025 – May 2025</p>
                   </div>
                   <div class="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
                     <span class="text-xs font-bold text-cyan-400 font-mono">Continental</span>
-                    <p class="text-[10px] text-slate-400 mt-0.5">Jul 2024 – Sep 2024</p>
+                    <p class="text-[10px] text-slate-400 mt-0.5">Jul 2024 – Oct 2024</p>
                   </div>
                   <div class="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
                     <span class="text-xs font-bold text-indigo-400 font-mono">WSA</span>
