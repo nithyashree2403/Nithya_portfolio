@@ -19,7 +19,7 @@ import { FormsModule } from '@angular/forms';
             Get in <span class="gradient-text">Touch</span>
           </h2>
           <p class="text-slate-400 text-base sm:text-lg">
-            Interested in discussing MLOps roles, full-stack engineering opportunities, or potential technical collaborations in Dublin or remotely? Drop a message!
+            Interested in discussing Software Engineering roles, Backend Development, Data Platform opportunities, or healthcare payment intelligence systems? Drop a message!
           </p>
         </div>
 
@@ -28,10 +28,10 @@ import { FormsModule } from '@angular/forms';
           <!-- Contact Info Cards Column -->
           <div class="lg:col-span-5 space-y-6">
             
-            <div class="glass-card rounded-2xl p-6 sm:p-8 space-y-6 border border-slate-800/80 bg-slate-900/60">
+            <div class="glass-card rounded-2xl p-6 sm:p-8 space-y-6 border border-slate-800/80 bg-slate-900/60 shadow-xl">
               <h3 class="text-xl font-bold text-slate-100">Contact Details</h3>
               <p class="text-xs text-slate-400 leading-relaxed">
-                Currently based in Dublin, Ireland and actively open to MLOps, AI & Full-Stack engineering roles.
+                Open to Software Engineer, Backend Development, and Data Platform Engineering roles. Available for opportunities across Dublin, Ireland, Bengaluru, India, or remotely.
               </p>
 
               <!-- Details List -->
@@ -69,8 +69,8 @@ import { FormsModule } from '@angular/forms';
                     📍
                   </div>
                   <div>
-                    <span class="text-[11px] font-mono text-slate-400 block">Current Location</span>
-                    <span class="text-xs sm:text-sm font-semibold text-slate-200">Dublin, Ireland</span>
+                    <span class="text-[11px] font-mono text-slate-400 block">Location Base</span>
+                    <span class="text-xs sm:text-sm font-semibold text-slate-200">Bengaluru, India • Dublin, Ireland</span>
                   </div>
                 </div>
 
@@ -80,8 +80,8 @@ import { FormsModule } from '@angular/forms';
                     🎓
                   </div>
                   <div>
-                    <span class="text-[11px] font-mono text-slate-400 block">Degree & GPA</span>
-                    <span class="text-xs sm:text-sm font-semibold text-emerald-400">MSc UCD (GPA 3.51/4.2)</span>
+                    <span class="text-[11px] font-mono text-slate-400 block">Academics</span>
+                    <span class="text-xs sm:text-sm font-semibold text-emerald-400">MSc UCD (GPA 3.46/4.2) • B.Tech (CGPA 9.12/10)</span>
                   </div>
                 </div>
 
@@ -102,7 +102,7 @@ import { FormsModule } from '@angular/forms';
                 </a>
 
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/nithyashreevs" 
                   target="_blank" 
                   rel="noopener"
                   class="flex-1 inline-flex items-center justify-center space-x-2 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-xs font-semibold text-slate-300 hover:text-sky-400 hover:border-sky-500/40 transition-all"
@@ -131,7 +131,7 @@ import { FormsModule } from '@angular/forms';
                       name="name" 
                       [(ngModel)]="formData.name" 
                       required 
-                      placeholder="e.g. Hiring Manager"
+                      placeholder="e.g. Engineering Lead / Recruiter"
                       class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-sky-500 text-sm transition-colors"
                     />
                   </div>
@@ -143,7 +143,7 @@ import { FormsModule } from '@angular/forms';
                       name="email" 
                       [(ngModel)]="formData.email" 
                       required 
-                      placeholder="e.g. hr@company.com"
+                      placeholder="e.g. recruiter@company.com"
                       class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-sky-500 text-sm transition-colors"
                     />
                   </div>
@@ -155,7 +155,7 @@ import { FormsModule } from '@angular/forms';
                     type="text" 
                     name="subject" 
                     [(ngModel)]="formData.subject" 
-                    placeholder="e.g. Full-Stack / MLOps Opportunity in Dublin"
+                    placeholder="e.g. Software Engineering / Backend / Data Platform Opportunity"
                     class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-sky-500 text-sm transition-colors"
                   />
                 </div>

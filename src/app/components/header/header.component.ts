@@ -18,13 +18,13 @@ import { CommonModule } from '@angular/common';
               </div>
             </div>
             <div class="flex flex-col">
-              <span class="text-slate-100 font-bold tracking-tight text-base group-hover:text-sky-400 transition-colors">Nithya Shree V.S</span>
-              <span class="text-[11px] font-mono text-slate-400">AI/ML & MLOps Engineer</span>
+              <span class="text-slate-100 font-bold tracking-tight text-base group-hover:text-sky-400 transition-colors">Nithya Shree V S</span>
+              <span class="text-[11px] font-mono text-slate-400">Software Engineer | Backend & Data Platforms</span>
             </div>
           </a>
 
           <!-- Desktop Navigation -->
-          <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
+          <nav class="hidden lg:flex items-center space-x-1 lg:space-x-2">
             <a 
               *ngFor="let item of navItems" 
               [href]="item.href"
@@ -46,7 +46,7 @@ import { CommonModule } from '@angular/common';
             <!-- Mobile Hamburger Button -->
             <button 
               (click)="toggleMenu()"
-              class="md:hidden p-2 rounded-lg text-slate-400 hover:text-slate-100 hover:bg-slate-900 border border-slate-800 transition-colors"
+              class="lg:hidden p-2 rounded-lg text-slate-400 hover:text-slate-100 hover:bg-slate-900 border border-slate-800 transition-colors"
               aria-label="Toggle Navigation Menu"
             >
               <svg *ngIf="!isMenuOpen()" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -60,7 +60,7 @@ import { CommonModule } from '@angular/common';
         </div>
 
         <!-- Mobile Navigation Menu -->
-        <div *ngIf="isMenuOpen()" class="md:hidden py-4 border-t border-slate-800/80 space-y-2 animate-fadeIn">
+        <div *ngIf="isMenuOpen()" class="lg:hidden py-4 border-t border-slate-800/80 space-y-2 animate-fadeIn">
           <a 
             *ngFor="let item of navItems" 
             [href]="item.href"
@@ -90,6 +90,7 @@ export class HeaderComponent {
     { label: 'About', href: '#about' },
     { label: 'Experience', href: '#experience' },
     { label: 'Projects', href: '#projects' },
+    { label: 'Domain Focus', href: '#domains' },
     { label: 'Skills', href: '#skills' },
     { label: 'Education', href: '#education' },
     { label: 'Certifications', href: '#certifications' },

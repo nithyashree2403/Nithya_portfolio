@@ -14,225 +14,225 @@ export interface Education {
   status: string;
 }
 
+export interface DomainInterest {
+  title: string;
+  category: string;
+  icon: string;
+  gradient: string;
+  summary: string;
+  topics: string[];
+}
+
 @Injectable({
   providedIn: 'root'
 })
 export class PortfolioService {
   profile = {
-    name: 'Nithya Shree V.S',
-    title: 'Software Engineer — AI / Applied Machine Learning',
-    email: 'nithyashree2403@gmail.com',
+    name: 'Nithya Shree V S',
+    title: 'Software Engineer | Backend Development | Data Platform Engineering',
+    email: 'nithyashree242003@gmail.com',
     phone: '+353 852193644',
-    location: 'Dublin, Ireland',
-    ucdGpa: '3.51 / 4.2',
+    location: 'Bengaluru, India • Dublin, Ireland',
+    ucdGpa: '3.46 / 4.2',
     dsuCgpa: '9.12 / 10',
-    summary: 'Software Engineer with a strong computer science foundation (BTech, CGPA 9.12) and an MSc in Information Systems in progress at UCD (GPA 3.51/4.2). Experience spans the full software and ML lifecycle — systems design, programming languages, testing, code reviews, model training, evaluation, and deployment — across Bosch, Continental, and Webstack Academy, working alongside talented people to support stakeholders, customers, and business operations. Proficient in Python, Java, C, JavaScript, Angular, and Flask; quick to pick up languages such as Scala, Ruby, or Go given strong fundamentals. Skilled in REST/HTTP API design, independent research, and writing clearly for stakeholders.'
+    summary: 'Software Engineer with an MSc in Information Systems (GPA: 3.46/4.2) and a B.Tech in Computer Science and Engineering (CGPA: 9.12/10), with hands-on experience in Python software development, backend systems, data engineering, MLOps, and AI-driven applications. Experienced in designing RESTful APIs, automating ETL and machine learning workflows, building CI/CD pipelines, and developing containerised applications using Docker and Kubernetes-based tooling. Worked with Kubeflow, MLflow, GitHub Actions, Flask, and cloud platform fundamentals, contributing to scalable data-processing workflows, internal engineering tools, and reliable software solutions. Familiar with LLM application prototyping and emerging agentic AI concepts. Strong foundation in data structures, database modelling, system design fundamentals, performance optimisation, and cross-functional collaboration. Interested in developing scalable data platforms and AI-powered solutions for complex use cases, including healthcare payment intelligence and claims processing.'
   };
+
+  private domainInterestsSignal = signal<DomainInterest[]>([
+    {
+      title: 'Healthcare Payment Intelligence & Claims Lifecycle',
+      category: 'Healthcare & Payment Systems',
+      icon: 'shield-check',
+      gradient: 'from-sky-500/20 via-cyan-500/20 to-indigo-500/20',
+      summary: 'Deep focus on US healthcare claims processing, payment integrity, and predictive intelligence across the claims journey.',
+      topics: [
+        'AI-Powered Healthcare Payment Intelligence',
+        'End-to-End US Healthcare Claims Lifecycle',
+        'Payment Integrity & Waste/Abuse Detection',
+        'Pre-Pay & Post-Pay Claims Processing',
+        'Commercial Healthcare, Medicare & Medicaid Workflows',
+        'Rules Engines & Anomaly Flagging for Claims'
+      ]
+    },
+    {
+      title: 'Scalable Data Platforms & Distributed Processing',
+      category: 'Data Platform Architecture',
+      icon: 'database',
+      gradient: 'from-cyan-500/20 via-indigo-500/20 to-purple-500/20',
+      summary: 'Architecting resilient data pipelines, relational storage schemas, and high-throughput internal engineering tooling.',
+      topics: [
+        'Data Platform Architecture & Engineering',
+        'Distributed Systems & Data Processing',
+        'Multi-Stage ETL Workflows & Data Pipelines',
+        'Relational Database Modeling & Query Optimization',
+        'Persistent Volumes & Container Storage Workflows',
+        'High-Reliability Internal Engineering Tooling'
+      ]
+    },
+    {
+      title: 'Agentic AI & Automated Data Engineering',
+      category: 'Applied AI & Automation',
+      icon: 'cpu',
+      gradient: 'from-indigo-500/20 via-purple-500/20 to-sky-500/20',
+      summary: 'Prototyping next-generation autonomous workflows, semantic retrieval, and self-validating data engineering pipelines.',
+      topics: [
+        'Emerging Agentic AI Concepts & Architectures',
+        'LLM Application Prototyping (Flowise, Groq, NLP)',
+        'Custom TF-IDF & Vector Semantic Search',
+        'Knowledge-Graph Exploration & Data Modeling',
+        'Automated CI/CD Validation & Verification',
+        'MLflow Tracking & Reproducible Model Builds'
+      ]
+    }
+  ]);
 
   private projectsSignal = signal<Project[]>([
     {
       id: 'nasa-space-apps',
-      title: 'NASA Space Apps Challenge 2025',
-      subtitle: 'AI Analytics Dashboards & Knowledge-Graph Retrieval System',
+      title: 'NASA Space Apps Challenge – Research Analytics Platform',
+      subtitle: 'Knowledge-Graph Exploration, TF-IDF Indexing & Containerised Query Engine',
       category: 'ai',
-      categoryLabel: 'AI & Data Science',
-      date: '2025',
-      description: 'Spearheaded a team designing AI analytics dashboards processing 600+ scientific datasets; implemented semantic search via text embeddings and token-sequence processing.',
-      longDescription: 'Spearheaded a team designing AI analytics dashboards processing 600+ scientific datasets; implemented semantic search via text embeddings and token-sequence processing for intelligent data discovery. Developed knowledge-graph exploration tools for navigating complex scientific relationships, supported by independent research into graph algorithms.',
+      categoryLabel: 'Data & Platform Engineering',
+      date: 'NASA Space Apps Challenge',
+      description: 'Architected a research analytics platform indexing 600+ scientific publications, processing large collections of research data to support efficient information retrieval and discovery.',
+      longDescription: 'Architected a research analytics platform indexing 600+ scientific publications, processing large collections of research data to support efficient information retrieval and discovery. Implemented custom TF-IDF indexing, search ranking algorithms, and knowledge-graph exploration to improve data modelling, information discovery, and search relevance. Developed backend data-processing and query workflows and containerised application services using Docker to support consistent deployment and maintainable platform development. Presented product capabilities and technical design decisions to stakeholders, communicating system functionality and implementation trade-offs.',
       architectureHighlights: [
-        'Spearheaded a team designing AI analytics dashboards processing 600+ scientific datasets.',
-        'Implemented semantic search via text embeddings and token-sequence processing for intelligent data discovery.',
-        'Developed knowledge-graph exploration tools for navigating complex scientific relationships.'
+        'Architected research analytics platform indexing 600+ scientific publications for efficient retrieval.',
+        'Implemented custom TF-IDF indexing, search ranking algorithms, and knowledge-graph exploration.',
+        'Developed backend data-processing and query workflows containerised with Docker for consistent deployment.',
+        'Communicated system architecture, trade-offs, and product capabilities in stakeholder presentations.'
       ],
       metrics: [
-        { value: '600+', label: 'Scientific Datasets' },
-        { value: 'Vector Space', label: 'Semantic Search' },
-        { value: 'Knowledge Graph', label: 'Data Discovery' }
+        { value: '600+', label: 'Scientific Publications Indexed' },
+        { value: 'TF-IDF + Graph', label: 'Search & Knowledge Discovery' },
+        { value: 'Docker', label: 'Containerised Application' }
       ],
-      tags: ['Python', 'AI Analytics', 'Semantic Search', 'Vector Embeddings', 'Knowledge Graphs', 'Graph Algorithms'],
+      tags: ['Python', 'NLP', 'TF-IDF', 'NetworkX', 'Docker', 'Knowledge Graphs', 'Search Algorithms', 'Data Processing'],
       featured: true,
       githubUrl: 'https://github.com/nithyashree2403/nasa-space-apps-analytics',
       liveUrl: 'https://github.com/nithyashree2403/nasa-space-apps-analytics',
-      badge: 'NASA Challenge 2025',
+      badge: 'Resume Project',
       icon: 'globe',
       gradient: 'from-sky-500/20 via-indigo-500/20 to-purple-500/20'
     },
     {
-      id: 'bosch-demand-forecasting',
-      title: 'AI Supply-Demand Forecasting Platform',
-      subtitle: 'LSTM-CNN & XGBoost Engine with Angular, Flask APIs & SQLite',
+      id: 'multilayer-auth-microservice',
+      title: 'Multilayer Authentication & Verification Microservice',
+      subtitle: 'Biometric Face Validation, Liveness Detection & Low-Latency REST APIs',
       category: 'fullstack',
-      categoryLabel: 'Full-Stack & AI',
-      date: 'Jan 2025 – May 2025',
-      description: 'Led systems design and architecture for an AI platform forecasting supply-demand trends (LSTM-CNN/XGBoost), supporting internal stakeholders, customer service, and revenue-driving operations at Bosch.',
-      longDescription: 'Led systems design and architecture for an AI platform forecasting supply-demand trends (LSTM-CNN/XGBoost), supporting internal stakeholders, customer service, and revenue-driving operations. Built and tested production software (Angular/HTML/CSS frontend, Flask middle tier, SQLite backend), developing RESTful, HTTP-based API routing across environments. Enabled low-latency, real-time forecasting and risk categorisation; tracked accuracy metrics and incorporated feedback from stakeholders and team members through iterative testing.',
+      categoryLabel: 'Backend & Microservices',
+      date: 'Engineering Project',
+      description: 'Developed a Python-based biometric verification microservice using OpenCV for face validation, liveness detection, and anomaly identification, achieving 99% authentication accuracy during project testing.',
+      longDescription: 'Developed a Python-based biometric verification microservice using OpenCV for face validation, liveness detection, and anomaly identification, achieving 99% authentication accuracy during project testing. Optimised relational database queries and backend data-processing operations, reducing API response latency by 25% under concurrent workloads. Integrated frontend interfaces with secure REST API endpoints and developed integration tests to strengthen application security and service reliability.',
       architectureHighlights: [
-        'Led systems design and architecture for AI platform forecasting supply-demand trends (LSTM-CNN/XGBoost).',
-        'Built and tested production software (Angular/HTML/CSS frontend, Flask middle tier, SQLite backend) with RESTful API routing.',
-        'Enabled low-latency, real-time forecasting and risk categorisation; tracked accuracy metrics through iterative testing.'
+        'Developed Python-based biometric verification microservice with OpenCV for face validation and liveness detection.',
+        'Achieved 99% authentication accuracy during project testing with anomaly identification.',
+        'Optimised relational database queries and backend data-processing operations, reducing latency by 25%.',
+        'Integrated frontend interfaces with secure REST API endpoints and authored comprehensive integration tests.'
       ],
       metrics: [
-        { value: 'LSTM-CNN/XGBoost', label: 'Forecasting Architecture' },
-        { value: 'Angular + Flask', label: 'Production Software' },
-        { value: 'Bosch Global', label: 'Software Engineer' }
+        { value: '99%', label: 'Authentication Accuracy' },
+        { value: '25% Faster', label: 'API Response Latency Reduction' },
+        { value: 'REST API', label: 'Secure Microservice' }
       ],
-      tags: ['Python', 'LSTM-CNN', 'XGBoost', 'Angular', 'Flask APIs', 'SQLite', 'RESTful APIs', 'Iterative Testing'],
+      tags: ['Python', 'OpenCV', 'SQLite', 'REST APIs', 'Biometrics', 'Liveness Detection', 'Database Optimization', 'Integration Testing'],
+      featured: true,
+      githubUrl: 'https://github.com/nithyashree2403/smart-voting-multilayer-auth',
+      liveUrl: 'https://github.com/nithyashree2403/smart-voting-multilayer-auth',
+      badge: 'Resume Project',
+      icon: 'shield',
+      gradient: 'from-purple-500/20 via-indigo-500/20 to-sky-500/20'
+    },
+    {
+      id: 'bosch-demand-forecasting',
+      title: 'Backend Demand Forecasting & Latency Optimization',
+      subtitle: 'Python Flask APIs, SQLite & 3–9-Month Predictive Forecasting at Bosch',
+      category: 'fullstack',
+      categoryLabel: 'Backend & ML Systems',
+      date: 'Feb 2025 – May 2025',
+      description: 'Designed Python backend services and RESTful APIs using Flask and SQLite at Bosch Global Software Technologies, integrating Angular interfaces and reducing query latency by 20%.',
+      longDescription: 'Designed and developed Python backend services and RESTful APIs using Flask and SQLite, supporting internal application workflows, data persistence, and risk categorisation. Engineered full-stack software solutions integrating Angular interfaces with backend services, optimising database queries to reduce application latency by 20%. Developed machine learning-based demand forecasting solutions using LSTM-CNN and XGBoost architectures to support predictive business use cases across 3–9-month forecasting horizons.',
+      architectureHighlights: [
+        'Engineered Python backend services and RESTful APIs using Flask and SQLite for risk categorisation.',
+        'Optimised database queries and integrated Angular frontend, reducing latency by 20%.',
+        'Developed LSTM-CNN and XGBoost demand forecasting models across 3–9-month horizons.',
+        'Executed automated testing, debugging workflows, and cross-functional technical design reviews.'
+      ],
+      metrics: [
+        { value: '20% Lower', label: 'Database Latency' },
+        { value: '3–9 Mo', label: 'Forecast Horizon' },
+        { value: 'Flask + SQLite', label: 'Backend Architecture' }
+      ],
+      tags: ['Python', 'Flask', 'REST APIs', 'SQLite', 'Angular', 'LSTM-CNN', 'XGBoost', 'Automated Testing'],
       featured: true,
       githubUrl: 'https://github.com/nithyashree2403/ai-demand-forecasting',
       liveUrl: 'https://github.com/nithyashree2403/ai-demand-forecasting',
-      badge: 'Bosch Global Software',
+      badge: 'Bosch Engineering',
       icon: 'trending-up',
       gradient: 'from-cyan-500/20 via-sky-500/20 to-emerald-500/20'
     },
     {
       id: 'continental-mlops-pipelines',
-      title: 'Data & MLOps Pipeline & Governance Suite',
-      subtitle: 'MLflow Tracking, Kubeflow Pipelines, Model Versioning & Safety Monitoring',
+      title: 'Automated Multi-Stage ETL & Kubeflow ML Pipelines',
+      subtitle: 'CI/CD with Self-Hosted Runners, Minikube & MLflow Tracking at Continental',
       category: 'mlops',
-      categoryLabel: 'MLOps Infrastructure',
-      date: 'Jul 2024 – Oct 2024',
-      description: 'Implemented experiment tracking, model versioning, deployment monitoring, and safety monitoring using MLflow; documented deployment programs using Kubeflow Pipelines at Continental.',
-      longDescription: 'Implemented experiment tracking, model versioning, deployment monitoring, and safety monitoring using MLflow, improving test coverage to reduce defects and support steady growth. Collaborated with cross-functional engineering teams and people across the organisation on technical design and code reviews; documented deployment programs using Kubeflow Pipelines. Contributed across the ML lifecycle — preprocessing, training, evaluation, and deployment — supporting client teams and customers, with feedback and guidance from mentors and peers.',
+      categoryLabel: 'Data & MLOps Pipelines',
+      date: 'Jul 2024 – Sep 2024',
+      description: 'Automated multi-stage ETL and ML data workflows using Kubeflow Pipelines and Linux shell scripting at Continental Automotive, eliminating 100% of manual verification checks.',
+      longDescription: 'Designed and automated multi-stage ETL and machine learning data-processing workflows using Kubeflow Pipelines and Linux shell scripting, eliminating 100% of manual verification checks. Developed CI/CD automation using GitHub Actions and self-hosted runners to support repeatable testing, pipeline validation, and reliable software deployment. Containerised workloads with Docker and Kubernetes (Minikube), configured persistent volume claims (PVCs), and integrated MLflow experiment tracking.',
       architectureHighlights: [
-        'Implemented experiment tracking, model versioning, deployment & safety monitoring using MLflow.',
-        'Collaborated with cross-functional engineering teams on technical design and code reviews.',
-        'Documented deployment programs using Kubeflow Pipelines.',
-        'Contributed across ML lifecycle: preprocessing, training, evaluation, and deployment.'
+        'Eliminated 100% of manual verification checks with Kubeflow Pipelines and shell automation.',
+        'Built CI/CD automation with GitHub Actions and self-hosted runners for reliable deployment.',
+        'Containerised workloads with Docker, Minikube Kubernetes orchestration, and persistent storage.',
+        'Integrated MLflow experiment tracking and managed CSV-based pipeline metrics.'
       ],
       metrics: [
-        { value: 'MLflow & Kubeflow', label: 'Model Versioning & Pipelines' },
-        { value: 'ML Lifecycle', label: 'Prep, Train, Eval, Deploy' },
-        { value: 'Continental', label: 'Software Engineer' }
+        { value: '100%', label: 'Manual Checks Eliminated' },
+        { value: 'Kubeflow', label: 'Multi-Stage ETL' },
+        { value: 'Minikube & PVC', label: 'Container Orchestration' }
       ],
-      tags: ['MLflow', 'Kubeflow Pipelines', 'Python', 'Model Versioning', 'Safety Monitoring', 'Code Reviews'],
+      tags: ['Kubeflow Pipelines', 'GitHub Actions', 'Docker', 'Kubernetes', 'MLflow', 'Shell Scripting', 'ETL Automation'],
       featured: true,
       githubUrl: 'https://github.com/nithyashree2403/mlops-kubeflow-mlflow',
       liveUrl: 'https://github.com/nithyashree2403/mlops-kubeflow-mlflow',
-      badge: 'Continental MLOps',
+      badge: 'Continental Engineering',
       icon: 'cpu',
       gradient: 'from-indigo-500/20 via-sky-500/20 to-cyan-500/20'
-    },
-    {
-      id: 'homely-hub-mern',
-      title: 'Homely Hub – Property Renting Platform',
-      subtitle: 'Full-Stack MERN Architecture with REST/HTTP API Routing & Database Access',
-      category: 'fullstack',
-      categoryLabel: 'Full-Stack Web',
-      date: 'Jan 2024 – Apr 2024',
-      description: 'Engineered prototypes and developed "Homely Hub," a property-renting platform, under guidance from mentors using the MERN stack.',
-      longDescription: 'Engineered prototypes and developed "Homely Hub," a property-renting platform, under guidance from mentors using the MERN stack. Delivered clean, maintainable, well-tested code across UI design, REST/HTTP API routing, and database access, with regular code reviews and support from mentors.',
-      architectureHighlights: [
-        'Engineered prototypes and developed "Homely Hub" property-renting platform using the MERN stack.',
-        'Delivered clean, maintainable, well-tested code across UI design and REST/HTTP API routing.',
-        'Built database access layer with regular code reviews and mentor support.'
-      ],
-      metrics: [
-        { value: 'MERN Stack', label: 'MongoDB Express React Node' },
-        { value: 'REST/HTTP API', label: 'Routing & DB Access' },
-        { value: 'Webstack Academy', label: 'Software Engineer' }
-      ],
-      tags: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'MERN', 'REST/HTTP APIs', 'UI Design'],
-      featured: true,
-      githubUrl: 'https://github.com/nithyashree2403/homely-hub-mern',
-      liveUrl: 'https://github.com/nithyashree2403/homely-hub-mern',
-      badge: 'Webstack Academy',
-      icon: 'home',
-      gradient: 'from-emerald-500/20 via-teal-500/20 to-sky-500/20'
-    },
-    {
-      id: 'breast-cancer-detection',
-      title: 'Breast Cancer Detection Engine',
-      subtitle: 'Comparative Evaluation of VGG16, VGG19, ResNet & InceptionV3',
-      category: 'ai',
-      categoryLabel: 'Deep Learning & Vision',
-      date: 'March 2024',
-      description: 'Directed data augmentation and model evaluation (60% of project) using VGG16, VGG19, ResNet, and InceptionV3 pre-trained models; VGG16 demonstrated superior performance.',
-      longDescription: 'Directed data augmentation and model evaluation (60% of project) using VGG16, VGG19, ResNet, and InceptionV3 pre-trained models; VGG16 demonstrated superior performance, a key 10% contribution to project success.',
-      architectureHighlights: [
-        'Directed data augmentation and model evaluation (60% of project).',
-        'Evaluated VGG16, VGG19, ResNet, and InceptionV3 pre-trained models.',
-        'Demonstrated VGG16 superior performance, contributing 10% to overall project success.'
-      ],
-      metrics: [
-        { value: '60%', label: 'Project Leadership' },
-        { value: 'VGG16', label: 'Top Model Accuracy' },
-        { value: '4 Vision', label: 'Pre-trained Models' }
-      ],
-      tags: ['Python', 'VGG16', 'VGG19', 'ResNet', 'InceptionV3', 'OpenCV', 'PyTorch', 'TensorFlow'],
-      featured: false,
-      githubUrl: 'https://github.com/nithyashree2403/breast-cancer-detection-dl',
-      liveUrl: 'https://github.com/nithyashree2403/breast-cancer-detection-dl',
-      badge: 'Medical AI',
-      icon: 'activity',
-      gradient: 'from-rose-500/20 via-purple-500/20 to-indigo-500/20'
-    },
-    {
-      id: 'smart-voting-auth',
-      title: 'Multilayer Authentication for Smart Voting System',
-      subtitle: 'Biometric Face Recognition, Live Spoofing Detection & OTP Access Control',
-      category: 'fullstack',
-      categoryLabel: 'Full-Stack Security',
-      date: 'Sep – Dec 2023',
-      description: 'Implemented multi-level authentication combining face recognition, live spoofing detection, and OTP verification; optimised MySQL performance for secure credential matching and data storage.',
-      longDescription: 'Implemented multi-level authentication combining face recognition, live spoofing detection, and OTP verification; optimised MySQL performance for secure credential matching and data storage.',
-      architectureHighlights: [
-        'Implemented multi-level authentication combining face recognition, live spoofing detection, and OTP verification.',
-        'Optimised MySQL performance for secure credential matching and data storage.',
-        'Designed anti-spoofing mechanism for fraud-resistant authentication.'
-      ],
-      metrics: [
-        { value: 'Multi-Level', label: 'Authentication' },
-        { value: 'Face + OTP', label: 'Live Spoofing Detection' },
-        { value: 'MySQL', label: 'Performance Optimization' }
-      ],
-      tags: ['Python', 'OpenCV', 'MySQL', 'Flask', 'Face Recognition', 'Spoofing Detection', 'OTP Verification'],
-      featured: false,
-      githubUrl: 'https://github.com/nithyashree2403/smart-voting-multilayer-auth',
-      liveUrl: 'https://github.com/nithyashree2403/smart-voting-multilayer-auth',
-      badge: 'Biometric Security',
-      icon: 'shield',
-      gradient: 'from-purple-500/20 via-indigo-500/20 to-sky-500/20'
     }
   ]);
 
   private experiencesSignal = signal<WorkExperience[]>([
     {
       company: 'Bosch Global Software Technologies',
-      role: 'Software Engineer — AI & Full Stack',
+      role: 'AI Engineering Intern',
       location: 'Bengaluru, India',
-      period: 'Jan 2025 – May 2025',
-      badge: 'AI & Full Stack',
+      period: 'Feb 2025 – May 2025',
+      badge: 'AI & Backend Development',
       description: [
-        'Led systems design and architecture for an AI platform forecasting supply-demand trends (LSTM-CNN/XGBoost), supporting internal stakeholders, customer service, and revenue-driving operations.',
-        'Built and tested production software (Angular/HTML/CSS frontend, Flask middle tier, SQLite backend), developing RESTful, HTTP-based API routing across environments.',
-        'Enabled low-latency, real-time forecasting and risk categorisation; tracked accuracy metrics and incorporated feedback from stakeholders and team members through iterative testing.'
+        'Designed and developed Python backend services and RESTful APIs using Flask and SQLite, supporting internal application workflows, data persistence, and risk categorisation.',
+        'Engineered full-stack software solutions integrating Angular interfaces with backend services, optimising database queries to reduce application latency by 20%.',
+        'Developed machine learning-based demand forecasting solutions using LSTM-CNN and XGBoost architectures to support predictive business use cases across 3–9-month forecasting horizons.',
+        'Performed model experimentation, hyperparameter tuning, data validation, and performance benchmarking using synthetic datasets to evaluate machine learning workflows.',
+        'Implemented automated testing and debugging workflows to identify software defects, improve application reliability, and support clean, maintainable code.',
+        'Collaborated with cross-functional engineering teams in technical design reviews, written documentation, and solution development, communicating implementation decisions and performance findings.'
       ],
-      technologies: ['Angular', 'Flask APIs', 'Python', 'LSTM-CNN', 'XGBoost', 'SQLite', 'RESTful APIs', 'Git', 'CI/CD']
+      technologies: ['Python', 'Flask', 'RESTful APIs', 'SQLite', 'Angular', 'LSTM-CNN', 'XGBoost', 'Automated Testing', 'Cross-Functional Collaboration']
     },
     {
-      company: 'Continental Automotive Components (India) Pvt. Ltd',
-      role: 'Software Engineer — Data & MLOps',
+      company: 'Continental Automotive',
+      role: 'Data & MLOps Engineering Intern',
       location: 'Bengaluru, India',
-      period: 'Jul 2024 – Oct 2024',
-      badge: 'Data & MLOps',
+      period: 'Jul 2024 – Sep 2024',
+      badge: 'Data & MLOps Engineering',
       description: [
-        'Implemented experiment tracking, model versioning, deployment monitoring, and safety monitoring using MLflow, improving test coverage to reduce defects and support steady growth.',
-        'Collaborated with cross-functional engineering teams and people across the organisation on technical design and code reviews; documented deployment programs using Kubeflow Pipelines.',
-        'Contributed across the ML lifecycle — preprocessing, training, evaluation, and deployment — supporting client teams and customers, with feedback and guidance from mentors and peers.'
+        'Designed and automated multi-stage ETL and machine learning data-processing workflows using Kubeflow Pipelines and Linux shell scripting, eliminating 100% of manual verification checks.',
+        'Developed CI/CD automation using GitHub Actions and self-hosted runners to support repeatable testing, pipeline validation, and reliable software deployment.',
+        'Containerised machine learning workloads using Docker and worked with Kubernetes-based environments through Minikube to understand container orchestration and application deployment.',
+        'Integrated MLflow experiment tracking and managed pipeline metrics through CSV-based workflows, supporting reproducibility and analytical review of model execution.',
+        'Configured persistent volume and persistent volume claim workflows to support storage requirements for containerised machine learning applications.',
+        'Contributed to data platform architecture discussions, internal engineering workflows, technical documentation, and deployment improvements through collaboration with senior engineering teams.'
       ],
-      technologies: ['MLflow', 'Kubeflow Pipelines', 'Docker', 'Kubernetes', 'Python', 'Model Versioning', 'Safety Monitoring']
-    },
-    {
-      company: 'Webstack Academy (WSA)',
-      role: 'Full Stack Software Engineer (MERN)',
-      location: 'Online',
-      period: 'Jan 2024 – Apr 2024',
-      badge: 'Full Stack MERN',
-      description: [
-        'Engineered prototypes and developed "Homely Hub," a property-renting platform, under guidance from mentors using the MERN stack.',
-        'Delivered clean, maintainable, well-tested code across UI design, REST/HTTP API routing, and database access, with regular code reviews and support from mentors.'
-      ],
-      technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js (MERN)', 'REST/HTTP APIs', 'Database Access', 'Code Reviews']
+      technologies: ['Kubeflow Pipelines', 'Linux Shell Scripting', 'GitHub Actions', 'Self-Hosted Runners', 'Docker', 'Kubernetes (Minikube)', 'MLflow', 'PVC Storage', 'ETL Workflows']
     }
   ]);
 
@@ -241,102 +241,127 @@ export class PortfolioService {
       institution: 'University College Dublin (UCD)',
       degree: 'MSc in Information Systems',
       location: 'Dublin, Ireland',
-      period: '2025 – Present',
-      grade: '3.51 / 4.2',
+      period: '2025 – 2026',
+      grade: '3.46 / 4.2',
       gradeLabel: 'Academic GPA',
       badge: 'Master of Science',
-      details: 'Pursuing MSc with coursework in Agentic AI, Generative AI/LLMs, Software Engineering, Data Architecture, Cloud Computing & Cybersecurity.',
-      status: 'Enrolled'
+      details: 'Pursuing MSc coursework in scalable systems, information architecture, machine learning systems, data governance, and enterprise cloud solutions.',
+      status: 'Enrolled (2025–2026)'
     },
     {
       institution: 'Dayananda Sagar University',
-      degree: 'B.Tech in Computer Science & Engineering',
+      degree: 'B.Tech in Computer Science and Engineering',
       location: 'Bengaluru, India',
       period: '2021 – 2025',
-      grade: '9.12 / 10.0',
+      grade: '9.12 / 10',
       gradeLabel: 'Academic CGPA',
       badge: 'Bachelor of Technology',
-      details: 'Strong foundation in Data Structures, Algorithms, AI/ML, Operating Systems, DBMS, Software Engineering & Computer Networks.',
-      status: 'Graduated (First Class with Distinction)'
-    },
-    {
-      institution: 'BGS National Public School',
-      degree: 'Senior Secondary (CBSE Class XII)',
-      location: 'Bengaluru, India',
-      period: '2021',
-      grade: '85.8%',
-      gradeLabel: 'CBSE Percentage',
-      badge: 'Senior Secondary',
-      details: 'Science stream with Physics, Chemistry, Mathematics, and Computer Science.',
-      status: 'Completed'
-    },
-    {
-      institution: 'Maharishi Vidya Mandir',
-      degree: 'Secondary (CBSE Class X)',
-      location: 'Bengaluru, India',
-      period: '2019',
-      grade: '89.0%',
-      gradeLabel: 'CBSE Percentage',
-      badge: 'Secondary School',
-      details: 'Core secondary education with high academic achievement in Mathematics & Science.',
-      status: 'Completed'
+      details: 'Strong core computer science foundation in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Distributed Computing.',
+      status: 'Graduated'
     }
   ]);
 
   private certificationsSignal = signal<Certification[]>([
-    { year: '2026', issuer: 'Coursera', title: 'AI Agents and Agentic AI with Python & Generative AI', badge: 'Agentic AI' },
-    { year: '2026', issuer: 'Coursera / Duke University', title: 'Python Essentials for MLOps', badge: 'MLOps' },
-    { year: '2026', issuer: 'Coursera / IBM', title: 'Generative AI and LLMs', badge: 'GenAI & LLMs' },
-    { year: '2024', issuer: 'Coursera / Google', title: 'Foundations of Cybersecurity', badge: 'Cybersecurity' },
-    { year: '2023', issuer: 'Udemy', title: 'Cloud Computing & AWS Fundamentals', badge: 'Cloud & AWS' },
-    { year: '2025', issuer: 'ICTRD', title: 'AI and ML Program', badge: 'AI/ML' },
-    { year: '2024', issuer: 'RapidMiner', title: 'Machine Learning Professional Certification', badge: 'ML Professional' },
-    { year: '2024', issuer: 'DSU', title: 'IoT Workshop with Hackathon', badge: 'IoT & Hackathon' },
-    { year: '2024', issuer: 'MathWorks', title: 'MATLAB Onramp', badge: 'MATLAB' },
-    { year: '2024', issuer: 'Coursera / Google', title: 'Introduction to Generative AI', badge: 'GenAI' },
-    { year: '2023', issuer: 'Udemy', title: 'Project Development with Java', badge: 'Java' },
-    { year: '2022', issuer: 'Inlingua', title: 'German A2 Language Certification', badge: 'German A2' },
-    { year: '2021', issuer: 'Inlingua', title: 'German A1 Language Certification', badge: 'German A1' }
+    { year: 'Duke University', issuer: 'Duke University / Coursera', title: 'Python Essentials for MLOps', badge: 'MLOps' },
+    { year: 'IBM', issuer: 'IBM / Coursera', title: 'Generative AI and LLMs', badge: 'GenAI & LLMs' },
+    { year: 'ICTRD', issuer: 'ICTRD Kaushalpith', title: 'Artificial Intelligence and Machine Learning Programme', badge: 'AI/ML' }
   ]);
 
+  // Exact 7 skill categories directly from the resume's CORE TECHNICAL SKILLS section
   private skillCategoriesSignal = signal<SkillCategory[]>([
     {
-      title: 'Agentic AI, LLM & MLOps Engineering',
-      description: 'Agentic workflows, RAG, tool calling, experiment tracking, and pipeline orchestration.',
-      icon: 'brain',
-      gradient: 'from-sky-500 to-indigo-500',
+      title: 'Programming & Software Development',
+      description: 'Core languages, data structures, and algorithmic software engineering.',
+      icon: 'code',
+      gradient: 'from-sky-500 to-cyan-500',
       skills: [
-        { name: 'Agentic AI & LLM Concepts (State Mgmt, Tool Calling, RAG, Vector Search)', level: 95, category: 'mlops', badge: 'Agentic AI' },
-        { name: 'MLflow (Experiment & Prompt Versioning, Model Registry)', level: 92, category: 'mlops', badge: 'Continental' },
-        { name: 'Kubeflow Pipelines, Docker & Kubernetes (K8s)', level: 90, category: 'mlops', badge: 'MLOps Deploy' },
-        { name: 'Python, PyTorch, Keras & TensorFlow', level: 94, category: 'mlops', badge: 'Deep Learning' },
-        { name: 'LSTM-CNN, XGBoost & Computer Vision (OpenCV, PyTesseract)', level: 90, category: 'mlops', badge: 'Bosch Forecast' }
+        { name: 'Python', level: 95, category: 'programming', badge: 'Primary' },
+        { name: 'SQL', level: 92, category: 'programming', badge: 'Data' },
+        { name: 'Java', level: 88, category: 'programming', badge: 'OOP' },
+        { name: 'JavaScript & TypeScript', level: 90, category: 'programming', badge: 'Full-Stack' },
+        { name: 'C & C++', level: 84, category: 'programming', badge: 'Systems' },
+        { name: 'Bash / Shell Scripting', level: 90, category: 'programming', badge: 'Automation' },
+        { name: 'Data Structures and Algorithms', level: 92, category: 'programming', badge: 'Core CS' },
+        { name: 'Object-Oriented Programming', level: 94, category: 'programming', badge: 'Design' }
       ]
     },
     {
-      title: 'Programming & Full-Stack Web',
-      description: 'Languages, modern SPA frontends, REST APIs, and database engineering.',
-      icon: 'layout',
-      gradient: 'from-sky-400 to-cyan-400',
-      skills: [
-        { name: 'Python, Java, C#, TypeScript & JavaScript', level: 94, category: 'programming', badge: 'Core Languages' },
-        { name: 'C, MATLAB, Shell & Assembly', level: 85, category: 'programming', badge: 'Systems Languages' },
-        { name: 'Angular, HTML, CSS & Tailwind CSS', level: 92, category: 'frontend', badge: 'Frontend SPA' },
-        { name: 'Flask RESTful APIs & MERN Stack (MongoDB, Express, React, Node)', level: 90, category: 'backend', badge: 'REST API & Web' },
-        { name: 'MySQL & SQLite Database Optimization', level: 88, category: 'backend', badge: 'Relational DB' }
-      ]
-    },
-    {
-      title: 'Software Engineering Practices, Cloud & Soft Skills',
-      description: 'CI/CD, observability, cloud platforms, governance, and collaborative leadership.',
+      title: 'Backend & Platform Development',
+      description: 'RESTful APIs, microservices, database tuning, and maintainable services.',
       icon: 'server',
+      gradient: 'from-cyan-500 to-indigo-500',
+      skills: [
+        { name: 'Flask & RESTful APIs', level: 94, category: 'backend', badge: 'Backend' },
+        { name: 'Microservices & Backend Services', level: 90, category: 'backend', badge: 'Architecture' },
+        { name: 'Internal Tooling & API Integration', level: 92, category: 'backend', badge: 'Tooling' },
+        { name: 'Database Optimisation (SQLite, Relational)', level: 88, category: 'backend', badge: 'Optimization' },
+        { name: 'Software Development & Clean Code', level: 94, category: 'backend', badge: 'Maintainability' }
+      ]
+    },
+    {
+      title: 'Data Engineering & Architecture',
+      description: 'ETL pipelines, data modeling, transformations, and large-scale processing.',
+      icon: 'database',
+      gradient: 'from-indigo-500 to-sky-500',
+      skills: [
+        { name: 'ETL Concepts & Automated Pipelines', level: 95, category: 'data', badge: 'Pipelines' },
+        { name: 'Data Modelling & Data Architecture', level: 90, category: 'data', badge: 'Modeling' },
+        { name: 'Data Transformation & Processing', level: 92, category: 'data', badge: 'Transform' },
+        { name: 'Relational Databases & Schemas', level: 90, category: 'data', badge: 'Databases' },
+        { name: 'Large Dataset Processing Workflows', level: 88, category: 'data', badge: 'Scale' },
+        { name: 'Machine Learning Workflows', level: 92, category: 'data', badge: 'ML Data' }
+      ]
+    },
+    {
+      title: 'Cloud & Containerization',
+      description: 'Docker containers, Kubernetes orchestration, Kubeflow, and cloud infrastructure.',
+      icon: 'cloud',
+      gradient: 'from-sky-400 to-indigo-600',
+      skills: [
+        { name: 'Docker & Containerised Applications', level: 94, category: 'cloud', badge: 'Containers' },
+        { name: 'Kubernetes (Minikube)', level: 88, category: 'cloud', badge: 'K8s' },
+        { name: 'Kubeflow Pipelines', level: 92, category: 'cloud', badge: 'Orchestration' },
+        { name: 'Persistent Volumes & Claims (PVC)', level: 86, category: 'cloud', badge: 'Storage' },
+        { name: 'Linux OS & Cloud Platforms (AWS, Azure, GCP)', level: 88, category: 'cloud', badge: 'Cloud' }
+      ]
+    },
+    {
+      title: 'DevOps & CI/CD',
+      description: 'GitHub Actions automation, self-hosted runners, testing, and ML experiment tracking.',
+      icon: 'git-branch',
       gradient: 'from-indigo-500 to-violet-500',
       skills: [
-        { name: 'Data Structures, Design Patterns & Architecture', level: 92, category: 'tools', badge: 'CS Core' },
-        { name: 'CI/CD, Git, Release Management & Testing', level: 90, category: 'tools', badge: 'Dev Practices' },
-        { name: 'Cloud Platforms: Azure, GCP & AWS (Coursework & Cert)', level: 86, category: 'cloud', badge: 'Cloud Deploy' },
-        { name: 'Observability (Tracing, Cost Tracking), Governance & Audit', level: 88, category: 'security', badge: 'ML Ops Audit' },
-        { name: 'Strategic Advice, Stakeholder Support & Teamwork', level: 95, category: 'tools', badge: 'Soft Skills' }
+        { name: 'Git & GitHub Actions CI/CD Pipelines', level: 94, category: 'devops', badge: 'CI/CD' },
+        { name: 'Self-Hosted Runners & Pipeline Validation', level: 90, category: 'devops', badge: 'Runners' },
+        { name: 'Automated Testing & Reproducible Builds', level: 92, category: 'devops', badge: 'Testing' },
+        { name: 'Deployment Automation', level: 88, category: 'devops', badge: 'Deployment' },
+        { name: 'MLflow Experiment Tracking', level: 92, category: 'devops', badge: 'MLflow' }
+      ]
+    },
+    {
+      title: 'AI, LLMs & Frameworks',
+      description: 'Machine learning, Generative AI, LLM prototyping, NLP, and vision models.',
+      icon: 'brain',
+      gradient: 'from-violet-500 to-fuchsia-500',
+      skills: [
+        { name: 'Machine Learning & Generative AI', level: 94, category: 'ai', badge: 'AI / GenAI' },
+        { name: 'LLM Application Prototyping (Flowise, Groq)', level: 90, category: 'ai', badge: 'LLMs' },
+        { name: 'NLP, Semantic Search & TF-IDF', level: 92, category: 'ai', badge: 'NLP' },
+        { name: 'PyTorch, TensorFlow & Scikit-learn', level: 88, category: 'ai', badge: 'Frameworks' },
+        { name: 'OpenCV (Computer Vision & Biometrics)', level: 90, category: 'ai', badge: 'Vision' }
+      ]
+    },
+    {
+      title: 'Engineering & Collaboration',
+      description: 'System design fundamentals, performance optimization, reviews, and cross-functional delivery.',
+      icon: 'users',
+      gradient: 'from-cyan-500 to-emerald-500',
+      skills: [
+        { name: 'System Design & Distributed Systems Fundamentals', level: 90, category: 'collaboration', badge: 'System Design' },
+        { name: 'Performance Optimisation & Latency Tuning', level: 92, category: 'collaboration', badge: 'Performance' },
+        { name: 'Debugging, Code Reviews & Application Security', level: 94, category: 'collaboration', badge: 'Code Review' },
+        { name: 'Technical Documentation & Communication', level: 94, category: 'collaboration', badge: 'Documentation' },
+        { name: 'Cross-Functional Teamwork & Problem Solving', level: 96, category: 'collaboration', badge: 'Teamwork' }
       ]
     }
   ]);
@@ -363,6 +388,10 @@ export class PortfolioService {
     return this.skillCategoriesSignal.asReadonly();
   }
 
+  getDomainInterests() {
+    return this.domainInterestsSignal.asReadonly();
+  }
+
   openProjectModal(project: Project) {
     this.selectedProject.set(project);
     document.body.style.overflow = 'hidden';
@@ -373,4 +402,3 @@ export class PortfolioService {
     document.body.style.overflow = 'auto';
   }
 }
-

@@ -4,6 +4,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { DomainInterestsComponent } from './components/domain-interests/domain-interests.component';
 import { ProjectModalComponent } from './components/project-modal/project-modal.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { EducationComponent } from './components/education/education.component';
@@ -19,6 +20,7 @@ import { FooterComponent } from './components/footer/footer.component';
     HeroComponent,
     ExperienceComponent,
     ProjectsComponent,
+    DomainInterestsComponent,
     ProjectModalComponent,
     SkillsComponent,
     EducationComponent,
@@ -35,6 +37,7 @@ import { FooterComponent } from './components/footer/footer.component';
         <app-hero></app-hero>
         <app-experience></app-experience>
         <app-projects></app-projects>
+        <app-domain-interests></app-domain-interests>
         <app-skills></app-skills>
         <app-education></app-education>
         <app-contact></app-contact>
@@ -49,5 +52,5 @@ import { FooterComponent } from './components/footer/footer.component';
   `
 })
 export class AppComponent {
-  title = 'Nithya Shree V.S | MLOps & Full-Stack Engineer';
+  title = 'Nithya Shree V S | Software Engineer | Backend Development | Data Platform Engineering';
 }
